@@ -1,0 +1,89 @@
+/**
+ *
+ * @module          LEPAdoR
+ * @author          LEPTON project 
+ * @copyright       2010-2015 LEPTON project 
+ * @link            http://www.LEPTON-cms.org
+ * @license			GNU General Public License
+ * @license_terms   please see info.php of this module
+ *
+ */
+ 
+table.lepador {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0px;
+	margin-bottom: 22px;
+}
+
+table.lepador caption {
+	background-color: #888888;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: center;
+	height: 20px;
+	width: 100% !important;
+	padding-top:3px;
+}
+
+table.lepador tr.row_a {
+	background-color: #EEEEEE;
+}
+table.lepador tr.row_b {
+	background-color: #DDDDDD;
+}
+
+table.lepador tr th,
+table.lepador tr td {
+	padding-left: 10px;
+	height: 24px;
+}
+
+th.name, th.version, th.state, th.download, th.index, th.last_info, th.page, th.download,
+td.name, td.version, td.state, td.download, td.index, td.last_info, td.page, td.download {
+
+}
+
+td.index, th.index {
+	width: 20px;
+	min-width: 20px;
+	text-align: right;
+	color: #AAAAAA;
+}
+td.name, th.name {
+	width: 150px;
+	overflow: hidden;
+}
+
+td.version, th.version {
+	width: 80px;
+	color: #990000;
+}
+
+td.type, th.type {
+	width: 100px;
+	overflow: hidden;
+}
+
+td.state, th.state {
+	width: 100px;
+	color: #888888;
+}
+
+td.last_change, th.last_change {
+	width: 80px;
+}
+
+td.page, th.page {
+	width: 150px;
+}
+
+h3.lepador {
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+table.lepador tr th {
+	font-weight: bold;
+	text-align: left;
+	color: #FFFFFF;
+	background-color: #AAAAAA;

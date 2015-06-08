@@ -1,0 +1,29 @@
+{% autoescape false %}
+<h3 class="lepador">{{ title }}</h3>
+{% for ref in all_modules %}
+<table class="lepador">
+<caption>{{ ref[0].type }}</caption>
+<tr>
+	<th class="index">Nr.</th>
+	<th class="name">Name</th>
+	<th class="version">Version</th>
+	<th class="state">State</th>
+	<th class="last_info">last change</th>
+	<th class="page">Lepador-Page</th>
+	<th class="download">Download</th>
+</tr>
+{% for module in ref %}
+<tr class="row_{% if loop.index % 2 == 0%}a{% else %}b{% endif %}">
+	<td class="index">{{ loop.index }}</td>
+	<td class="name">{{ module.name }}</td>
+	<td class="version">{{ module.version }}</td>
+	<td class="state">{{ module.state }}</td>
+	<td class="last_info">{{ module.last_info }}</td>
+	<td class="page"><a href="{{ module.page_url }}" target="_blank">{{ module.page_title }}</a></td>
+	<td class="download"><a href="{{ module.download }}" target="_blank">Download …</a></td>
+</tr>
+{% endfor %}
+</table>
+{% endfor %}
+
+{% endautoescape %}
